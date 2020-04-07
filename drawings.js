@@ -45,7 +45,7 @@ function drawmain() {
     ctx.beginPath();
     let color = findcolor()
     ctx.rect(mainX, mainY, mainWidth, mainHeight);
-    ctx.fillStyle = olor
+    ctx.fillStyle = color
     ctx.fill();
     ctx.closePath();
 }
