@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #myCanvas {
+      border: solid 10px black;
+    }
+
+    body{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width:100vw;
+      margin:0 auto;
+    }
+
+    body > *{
+      width:40vw;
+    }
+
+    .dev{
+      display:none;
+    }
+
+  </style>
+  <body>
+      <div id="position">
+        <h1>Find the hidden square</h1>
+        <div class="dev">
+          <h1>Positions</h1>              
+          <h2>Moving</h2>
+              <span>x : <span id="movingX"></span></span>
+              <span>y : <span id="movingY"></span></span>
+        </div>
+
+        <div class="dev ">
+          <h2>To find</h2>
+              <span>x : <span id="toFindX"></span></span>
+              <span>y : <span id="toFindY"></span></span>
+        </div>
+
+        <div class="dev"> 
+          <h2>Color : <span id="color"></span></h2>
+        </div>
+        <div>
+          <h2><span id="score-display"></span> to win</h2>
+        </div>
+
+      </div>
+        
+    <canvas width="500" height="500" id="myCanvas" ></canvas>
+    <script src="./drawings.js">
+    </script>
+  </body>
+</html>
